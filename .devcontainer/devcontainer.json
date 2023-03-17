@@ -19,7 +19,7 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [5115]
+	"forwardPorts": [5115],
 	// todo-chrish: figure out how to support certificate and https in container
 	// "forwardPorts": [5115, 7070],
 	// "portsAttributes": {
@@ -28,6 +28,16 @@
 	//		}
 	// }
 
+	// Configure tool-specific properties.
+    "customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+		  // Add the IDs of extensions you want installed when the container is created.
+		  "extensions": [
+			"ms-dotnettools.csharp"
+		  ]
+		}
+	  }
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "dotnet restore",
 
