@@ -19,9 +19,9 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [5115],
+	// "forwardPorts": [5115],
 	// todo-chrish: figure out how to support certificate and https in container
-	// "forwardPorts": [5115, 7070],
+	"forwardPorts": [5115, 7070],
 	// "portsAttributes": {
 	//		"7070": {
 	//			"protocol": "https"
