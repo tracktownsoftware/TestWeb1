@@ -2,4 +2,4 @@
 dotnet dev-certs https --trust
 
 ## Restore .NET packages and build the default solution
-dotnet restore && dotnet build && dotnet run
+dotnet restore && dotnet build
