@@ -19,8 +19,6 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [5115],
-	// todo-chrish: figure out how to support certificate and https in container
 	"forwardPorts": [5115, 7070],
 	"portsAttributes": {
 			"7070": {
@@ -40,7 +38,7 @@
 	  },
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "dotnet restore",
-	"postCreateCommand": "dotnet dev-certs https --trust"
+	"postCreateCommand": "/bin/bash ./.devcontainer/post-create.sh > ~/post-create.log"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
