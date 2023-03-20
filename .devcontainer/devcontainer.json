@@ -22,11 +22,11 @@
 	// "forwardPorts": [5115],
 	// todo-chrish: figure out how to support certificate and https in container
 	"forwardPorts": [5115, 7070],
-	// "portsAttributes": {
-	//		"7070": {
-	//			"protocol": "https"
-	//		}
-	// }
+	"portsAttributes": {
+			"7070": {
+				"protocol": "https"
+			}
+	},
 
 	// Configure tool-specific properties.
     "customizations": {
